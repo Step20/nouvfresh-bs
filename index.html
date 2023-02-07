@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/leaf.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="plugin/WOW-master/css/libs/animate.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>NOVUFresh - Modern Japanese Inspired Restaurant & Catering</title>
+  </head>
+  <body>
+    <div>
+      <div class="preloader"></div>
+
+      <section id="home" class="">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-between pt-2">
+            <div class="d-flex ml-4">
+              <div class="p-2">
+                <a href="http://twitter.com/"
+                  ><i
+                    class="fa fa-twitter home-icon wow fadeIn"
+                    data-wow-delay="1s"
+                  ></i
+                ></a>
+              </div>
+              <div class="p-2">
+                <a href="http://facebook.com/"
+                  ><i
+                    class="fa fa-facebook wow fadeIn home-icon"
+                    data-wow-delay="2s"
+                  ></i
+                ></a>
+              </div>
+              <div class="p-2">
+                <a href="http://instagram.com/"
+                  ><i
+                    class="fa fa-instagram wow fadeIn home-icon"
+                    data-wow-delay="3s"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="d-flex mr-4 home-login-row">
+              <div class="p-2">
+                <a type="button" id="login-btn"><p>LOGIN</p></a>
+              </div>
+              <div class="">
+                <button id="sign-btn" type="button" class="btn signup-btn">
+                  SIGN UP
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title mx-auto">
+                    <img src="img/NOVUFRESH-sm.png" class="introimg" />
+                  </h3>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-12">
+                          <label class="sr-only" for="loginEmail"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control form-control-sm"
+                            id="loginEmail"
+                            placeholder="Enter email"
+                          />
+                        </div>
+                        <div class="form-group col-12">
+                          <label class="sr-only" for="loginPassword"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control form-control-sm"
+                            id="loginPassword"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <div class="col">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" />
+                            <label class="form-check-label"> Remember me</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-sm ml-auto"
+                          data-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn y btn-sm ml-1 btn-dark"
+                          style="background-color: black"
+                        >
+                          Sign in
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-center wow fadeIn animated home-img"
+            data-wow-delay="1s"
+          >
+            <div class="">
+              <img src="img/NOVUFRESH.png" class="" />
+            </div>
+          </div>
+          <div
+            class="row justify-content-center wow fadeInUp animated"
+            data-wow-delay="2s"
+          >
+            <div class="p-2 col-xs-12">
+              <a href="order.html"
+                ><button
+                  id="order-btn"
+                  type="button"
+                  class="btn menu-order-btn mr-4"
+                >
+                  ORDER NOW
+                </button></a
+              >
+            </div>
+            <div class="p-2 col-xs-12">
+              <a href="#menu"
+                ><button
+                  href="#menu"
+                  id="menu-btn"
+                  type="button"
+                  class="btn menu-order-btn"
+                >
+                  VIEW MENU
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="navbar sticky-top navbar-custom navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ml-5 justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">ORDER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="page-scroll nav-link" href="#services">CATERING</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  ABOUT
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="hydro.html">Hydroponics</a>
+                  <a class="dropdown-item" href="community.html">Community</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="nf-sec">
+        <div class="container">
+          <div
+            class="row justify-content-center pt-5 pb-4 wow fadeIn animated"
+            data-wow-delay="1s"
+          >
+            <div>
+              <img src="img/NOVUFRESH-sm.png" />
+            </div>
+          </div>
+          <div
+            class="row justify-content-center wow fadeIn animated"
+            data-wow-delay="1.5s"
+          >
+            <div class="col-9">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more- or-less
+                normal. looking at its layout. The point of using Lorem Ipsum is
+                that it has a more- or-less normal. looking at its layout. The
+                point of using
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="com-sec" class="parallax-section">
+        <div class="container">
+          <div
+            class="row justify-content-center wow fadeInDown animated"
+            data-wow-delay="1s"
+          >
+            <div class="p-5">
+              <h1>COMMUNITY</h1>
+            </div>
+          </div>
+          <div
+            class="row justify-content-center wow fadeInUp animated"
+            data-wow-delay="1.5s"
+          >
+            <div class="col-9">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+          <div
+            class="row justify-content-center wow fadeInUp animated"
+            data-wow-delay="1.5s"
+          >
+            <div class="">
+              <a href="community.html"
+                ><button id="view-btn" type="button" class="btn view-btn">
+                  VIEW MORE
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="p-5 mt-3">
+              <h1>MENU</h1>
+              <hr />
+            </div>
+          </div>
+          <div class="row text-center justify-content-center">
+            <div
+              class="col-sm-4 menu-item wow fadeInUp animated"
+              data-wow-delay="1s"
+            >
+              <a href="order.html">
+                <img src="img/menu1.png" />
+                <h2>Sample Text</h2>
+                <h4>
+                  ORDER
+                  <a href="order.html"
+                    ><i class="fa fa-sharp fa-solid fa-arrow-right"></i
+                  ></a>
+                </h4>
+              </a>
+            </div>
+            <div
+              class="col-sm-4 menu-item wow fadeInUp animated"
+              data-wow-delay="1s"
+            >
+              <a href="order.html">
+                <img src="img/menu2.png" />
+                <h2>Sample Text</h2>
+                <h4>
+                  ORDER
+                  <a href="order.html"
+                    ><i class="fa fa-sharp fa-solid fa-arrow-right"></i
+                  ></a>
+                </h4>
+              </a>
+            </div>
+            <div
+              class="col-sm-4 menu-item wow fadeInUp animated"
+              data-wow-delay="1s"
+            >
+              <a href="order.html">
+                <img src="img/menu3.png" />
+                <h2>Sample Text</h2>
+                <h4>
+                  ORDER
+                  <a href="order.html"
+                    ><i class="fa fa-sharp fa-solid fa-arrow-right"></i
+                  ></a>
+                </h4>
+              </a>
+            </div>
+            <div
+              class="col-sm-4 menu-item mt-5 wow fadeInUp animated"
+              data-wow-delay="1.5s"
+            >
+              <a href="order.html">
+                <img src="img/menu4.png" />
+                <h2>Sample Text</h2>
+                <h4>
+                  ORDER
+                  <a href="order.html"
+                    ><i class="fa fa-sharp fa-solid fa-arrow-right"></i
+                  ></a>
+                </h4>
+              </a>
+            </div>
+            <div
+              class="col-sm-4 menu-item mt-5 mb-3 wow fadeInUp animated"
+              data-wow-delay="1.5s"
+            >
+              <a href="order.html">
+                <img src="img/menu5.png" />
+                <h2>Sample Text</h2>
+                <h4>
+                  ORDER
+                  <a href="order.html"
+                    ><i class="fa fa-sharp fa-solid fa-arrow-right"></i
+                  ></a>
+                </h4>
+              </a>
+            </div>
+            <div
+              class="col-sm-4 menu-item mt-5 wow fadeInUp animated"
+              data-wow-delay="1.5s"
+            >
+              <a href="order.html">
+                <img src="img/menu6.png" />
+                <h2>Sample Text</h2>
+                <h4>
+                  ORDER
+                  <a href="order.html"
+                    ><i class="fa fa-sharp fa-solid fa-arrow-right"></i
+                  ></a>
+                </h4>
+              </a>
+            </div>
+          </div>
+          <!--<div class="row justify-content-center">
+            <div class="">
+              <a href="order.html"
+                ><button id="menu-btn" type="button" class="btn menu-btn">
+                  VIEW MENU
+                </button></a
+              >
+            </div>
+          </div>-->
+        </div>
+      </section>
+
+      <section id="hydro-sec" class="parallax-section">
+        <div class="container">
+          <div
+            class="row justify-content-center wow fadeInDown animated"
+            data-wow-delay="1s"
+          >
+            <div class="p-5">
+              <h1>HYDROPONICS</h1>
+            </div>
+          </div>
+          <div
+            class="row justify-content-center wow fadeInUp animated"
+            data-wow-delay="1.5s"
+          >
+            <div class="col-9">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+          <div
+            class="row justify-content-center wow fadeInUp animated"
+            data-wow-delay="1.5s"
+          >
+            <div class="">
+              <a href="hydro.html"
+                ><button id="view-btn" type="button" class="btn view-btn">
+                  VIEW MORE
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="p-5 mt-3">
+              <h1>SERVICES</h1>
+              <hr />
+            </div>
+          </div>
+          <div
+            class="row justify-content-center mt-5 wow fadeInUp animated"
+            data-wow-delay="1s"
+          >
+            <div class="col">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/catering.png"
+                  alt="Catering"
+                />
+                <div class="card-body text-center">
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the distracted by the distracted
+                  </p>
+                  <a href="catering.html" class="btn service-btn"
+                    >EXPLORE CATERING</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="img/grpord.png" alt="Catering" />
+                <div class="card-body text-center">
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the distracted by the distracted
+                  </p>
+                  <a href="catering.html" class="btn service-btn"
+                    >START ORDERING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 ml-auto mt-5">
+              <ul>
+                <h4>ABOUT</h4>
+                <li><a>Our Values</a></li>
+                <li><a>Health Safety</a></li>
+                <li><a>All Locations</a></li>
+
+                <li><a> News Events</a></li>
+                <li><a> Foundation</a></li>
+                <li><a> Sustainability</a></li>
+
+                <li><a> Investors</a></li>
+                <li><a> ARK Locale</a></li>
+                <li><a>Do Not Sell My Information</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 ml-auto mt-5">
+              <ul>
+                <h4>CONTACT US</h4>
+                <span class="fa fa-stack fa-2x">
+                  <i class="fa fa-bg fa-circle fa-stack-2x"></i>
+                  <i class="fa fas fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa fa-stack fa-2x">
+                  <i class="fa fa-bg fa-thin fa-circle fa-stack-2x"></i>
+                  <i class="fa fas fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa fa-stack fa-2x">
+                  <i class="fa fa-bg fa-thin fa-circle fa-stack-2x"></i>
+                  <i class="fa fas fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 ml-auto mt-5 footer-social">
+              <h4>DOWNLOAD OUR APP</h4>
+              <img src="img/footer-2.png" />
+
+              <img src="img/footer-1.png" />
+            </div>
+          </div>
+          <div class="row ft-btm justify-content-center ml-4 mt-5">
+            <div class="col-sm-3">
+              <p>ⓒ 2022 NOVUFresh</p>
+            </div>
+            <div class="col">
+              <p>Virginia Transparency in Supply Chains Act</p>
+            </div>
+            <div class="col"><p>Term of Use</p></div>
+            <div class="col"><p>Accessibility Statement</p></div>
+            <div class="col"><p>Privacy Policy</p></div>
+            <div class="col"><p>Cookie Preferences</p></div>
+          </div>
+        </div>
+      </footer>
+      <a onclick="topFunction()" id="back-to-top" title="Go to top"
+        ><i class="fa fa-angle-up"></i
+      ></a>
+    </div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugin/WOW-master/dist/wow.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

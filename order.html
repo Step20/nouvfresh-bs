@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/leaf.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>NOVUFresh - Modern Japanese Inspired Restaurant & Catering</title>
+  </head>
+  <body>
+    <div>
+      <div class="preloader"></div>
+
+      <nav class="navbar sticky-top navbar-custom navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ml-5 justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">ORDER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#menu">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catering.html">CATERING</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="hydro.html"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  ABOUT
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="hydro.html">Hydroponics</a>
+                  <a class="dropdown-item" href="community.html">Community</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="order">
+        <div class="container">
+          <div class="row order-top">
+            <div class="col-sm-5">
+              <img src="img/menu2.png" />
+            </div>
+            <div class="col-sm-7 p-5">
+              <h4>BUILD YOUR</h4>
+              <h1>SALAD BOWL</h1>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row justify-content-end order-body">
+            <div class="col-sm-4 text-right">
+              <h4>
+                NUTRITION PREFERENCES
+                <span
+                  ><a type="button" id="nutri-btn"
+                    ><img
+                      src="img/slider.svg"
+                      style="width: 19px; margin-bottom: 3px" /></a
+                ></span>
+              </h4>
+            </div>
+          </div>
+          <div class="row order-body justify-content-center mt-3">
+            <div class="col mb-4">
+              <h2>VEGETABLES</h2>
+            </div>
+          </div>
+          <div class="row justify-content-start order-opt">
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row order-body justify-content-center mt-5">
+            <div class="col">
+              <h2>PROTEIN</h2>
+              <p>Choose up to two.</p>
+            </div>
+          </div>
+          <div class="row justify-content-start order-opt">
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row order-body justify-content-center mt-5">
+            <div class="col">
+              <h2>DRESSING</h2>
+              <p>Choose up to two.</p>
+            </div>
+          </div>
+          <div class="row justify-content-start order-opt">
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 order-card-out">
+              <div class="order-card">
+                <div class="order-card-body">
+                  <div class="text-left">
+                    <h4>CHICKEN</h4>
+                    <p>$8.90</p>
+                    <p>180 cal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="order-bottom">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col ord-btm-text">
+              <h4>YOUR ORDER</h4>
+              <p>Select a protein or vegetable to get started</p>
+            </div>
+            <div class="col">
+              <a href="#"
+                ><button id="order-btn" type="button" class="btn order-btn">
+                  BUY NOW
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="nutriModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">NUTRITION PREFERENCES</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="container-fluid">
+                <form>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label text-success"
+                      >Plant Base</label
+                    >
+                    <div
+                      class="col-2 btn-group btn-group-toggle"
+                      data-toggle="buttons"
+                    >
+                      <label class="btn btn-success active">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteTent"
+                          autocomplete="off"
+                          value="tent"
+                          checked
+                        />
+                        Vegetarian
+                      </label>
+                      <label class="btn btn-success">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteRV"
+                          autocomplete="off"
+                          value="RV"
+                        />
+                        Vegan
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label text-secondary"
+                      >Lifestyle</label
+                    >
+                    <div
+                      class="col-2 btn-group btn-group-toggle"
+                      data-toggle="buttons"
+                    >
+                      <label class="btn btn-secondary active">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteTent"
+                          autocomplete="off"
+                          value="tent"
+                          checked
+                        />
+                        Paleo
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteRV"
+                          autocomplete="off"
+                          value="RV"
+                        />
+                        Keto
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteRV"
+                          autocomplete="off"
+                          value="RV"
+                        />
+                        Whole30®
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label text-danger"
+                      >Avoiding</label
+                    >
+                    <div
+                      class="col-2 btn-group btn-group-toggle"
+                      data-toggle="buttons"
+                    >
+                      <label class="btn btn-danger active">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteTent"
+                          autocomplete="off"
+                          value="tent"
+                          checked
+                        />
+                        Gluten
+                      </label>
+                      <label class="btn btn-danger">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteRV"
+                          autocomplete="off"
+                          value="RV"
+                        />
+                        Dairy
+                      </label>
+                      <label class="btn btn-danger">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteRV"
+                          autocomplete="off"
+                          value="RV"
+                        />
+                        Soy
+                      </label>
+                      <label class="btn btn-danger">
+                        <input
+                          type="radio"
+                          name="siteType"
+                          id="siteRV"
+                          autocomplete="off"
+                          value="RV"
+                        />
+                        Sulphites
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col">
+                      <br /><br />
+                      <button
+                        type="submit"
+                        class="btn btn-block btn-dark"
+                        style="background-color: black"
+                      >
+                        APPLY
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 ml-auto mt-5">
+              <ul>
+                <h4>ABOUT</h4>
+                <li><a>Our Values</a></li>
+                <li><a>Health Safety</a></li>
+                <li><a>All Locations</a></li>
+
+                <li><a> News Events</a></li>
+                <li><a> Foundation</a></li>
+                <li><a> Sustainability</a></li>
+
+                <li><a> Investors</a></li>
+                <li><a> ARK Locale</a></li>
+                <li><a>Do Not Sell My Information</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 ml-auto mt-5">
+              <ul>
+                <h4>CONTACT US</h4>
+                <span class="fa fa-stack fa-2x">
+                  <i class="fa fa-bg fa-circle fa-stack-2x"></i>
+                  <i class="fa fas fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa fa-stack fa-2x">
+                  <i class="fa fa-bg fa-thin fa-circle fa-stack-2x"></i>
+                  <i class="fa fas fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa fa-stack fa-2x">
+                  <i class="fa fa-bg fa-thin fa-circle fa-stack-2x"></i>
+                  <i class="fa fas fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 ml-auto mt-5 footer-social">
+              <h4>DOWNLOAD OUR APP</h4>
+              <img src="img/footer-2.png" />
+
+              <img src="img/footer-1.png" />
+            </div>
+          </div>
+          <div class="row ft-btm justify-content-center ml-4 mt-5">
+            <div class="col-sm-3">
+              <p>ⓒ 2022 NOVUFresh</p>
+            </div>
+            <div class="col">
+              <p>Virginia Transparency in Supply Chains Act</p>
+            </div>
+            <div class="col"><p>Term of Use</p></div>
+            <div class="col"><p>Accessibility Statement</p></div>
+            <div class="col"><p>Privacy Policy</p></div>
+            <div class="col"><p>Cookie Preferences</p></div>
+          </div>
+        </div>
+      </footer>-->
+    </div>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugin/WOW-master/dist/wow.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
